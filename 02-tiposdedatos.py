@@ -90,3 +90,10 @@ print(bool(0))
 print(bool(""))
 print(type(bool("True")))
 print(bool(4000))
+
+#evaluando numeros con operadores de comparación
+print(100 > 50)
+
+print(10 == 10)
+
+print(20 < 0)

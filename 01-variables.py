@@ -12,7 +12,7 @@ print("Mi nombre es", nombre, ", mi apellido es", apellido, "y mi edad es de" , 
 print(f"Mi nombre es {nombre}, mi apellido es {apellido} y mi edad es de {edad} años")
 
 #Forma 3: Concatenacion (utilizando el operardor +)
-#str(stings es igual a las cadenas de PseInt), se utiliza transforma el valor edad de entero a texto
+#str transformar texto en valor (cadena de texto)
 print("Mi nombre es " + nombre + " y mi apellido es " + apellido + " y mi edad es de " + str(edad) + "años")
 
 #Utilizando el método input y creando una variable creando una carrera
