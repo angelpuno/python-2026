@@ -1,0 +1,7 @@
+nombre= str(input(f"introduzca su nombre completo: "))
+nombre= nombre.strip()
+nombre= nombre.lower()
+nombre= nombre.replace(" ", ".")
+print("")
+print("correo:")
+print(f"{nombre}@alumnos.ulagos.cl")
