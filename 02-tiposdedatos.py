@@ -47,7 +47,8 @@ print(carrera[0:11]) #Imprime los caracteres desde el indice 0 hasta el 10 (0 es
 
 print(institucion[0])#caracter
 
-print(carrera.split)
+carrera= carrera.split() #transformar texto en una lista
+print(carrera)
 
 print("hola " * 4)
 
