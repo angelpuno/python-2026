@@ -3,13 +3,10 @@ tiempo1= round(float(input(f"ingrese el primer tiempo: ")), 3)
 tiempo2= round(float(input(f"ingrese el segundo tiempo: ")), 3)
 tiempo3= round(float(input(f"ingrese el tercer tiempo: ")), 3)
 tiempos_respuesta= [tiempo1, tiempo2, tiempo3]
-
 promedio= (tiempos_respuesta[0]+tiempos_respuesta[1]+tiempos_respuesta[2])/len(tiempos_respuesta)
-
 tiempo_rapido= min(tiempos_respuesta)
 tiempo_lento= max(tiempos_respuesta)
 brecha_de_rendimiento= (tiempo_lento-tiempo_rapido)
-
 print(f"tiempo 1: {tiempo1} ms")
 print(f"tiempo 2: {tiempo2} ms")
 print(f"tiempo 3: {tiempo3} ms")
