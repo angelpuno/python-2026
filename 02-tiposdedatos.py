@@ -98,3 +98,5 @@ print(100 > 50)
 print(10 == 10)
 
 print(20 < 0)
+
+# (None), (Infinito) son un tipo de dato
