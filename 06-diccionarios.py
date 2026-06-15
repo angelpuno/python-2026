@@ -94,3 +94,13 @@ medico2= medico.copy()
 print(f"\n======DICCIONARIO COPIA (MEDICO2)====== \n\n{medico2}")
 medico2.clear()
 print(medico2)
+
+n= [1, 2, 3, 4, 5]
+n_str= list(map(str,n))
+print(f"Lista de números como strings: {", ".join(n_str)}")
+
+#Métodos para Datos Iterables
+a= [1,2,3,4,5]
+b= ["A","B","C","D"]
+comprimir= list(zip(a,b))
+print(comprimir)
