@@ -35,3 +35,9 @@ encendido = True
 if bencina and encendido:
     print("el vehiculo puede arrancar")
 else: print("El vehiculo no puede arrancar")
+
+#Utilizando el operador OR
+if bencina or encendido:
+    print("El vehiculo puede arrancar")
+else:
+    print("El vehiculo no puede arrancar")
