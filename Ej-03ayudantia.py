@@ -1,0 +1,17 @@
+mis_notas= []
+
+mis_notas.append(4.3)
+mis_notas.append(5.4)
+mis_notas.append(6.5)
+mis_notas.append(7.0)
+mis_notas.append(3.5)
+print("===== INFORMACION =====\n")
+print(f"Cantidad de notas: {len(mis_notas)}\n")
+print(f"Nota N°1: {mis_notas[0]}")
+print(f"Nota N°2: {mis_notas[1]}")
+print(f"Nota N°3: {mis_notas[2]}")
+print(f"Nota N°4: {mis_notas[3]}")
+print(f"Nota N°5: {mis_notas[4]}\n")
+print(f"Nota minima: {min(mis_notas)}")
+print(f"Nota maxima: {max(mis_notas)}\n")
+print(f"Promedio notas: {round(sum(mis_notas)/len(mis_notas), 1)}")

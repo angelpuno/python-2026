@@ -70,14 +70,17 @@ tablero= {
     "g1":"N",
     "h1":"R"
 }
-
+contador= 1
 piezas_capturadas= []
-
+piezas= []
 for fila in range(8,0,-1):
     fila = str(fila)
+    for columna in "abcdefgh":
+        piezas+= tablero[f"{columna}{fila}"]
+        
     print(Fore.MAGENTA + fila+" "+ Fore.WHITE + tablero[f"a{fila}"]+" "+tablero[f"b{fila}"]+" "+tablero[f"c{fila}"]+" "+tablero[f"d{fila}"]+" "+tablero[f"e{fila}"]+" "+tablero[f"f{fila}"]+" "+tablero[f"g{fila}"]+" "+tablero[f"h{fila}"])
 print(Fore.MAGENTA + "  a b c d e f g h\n")
-
+print(piezas)
 while True:
     posicion= str(input(Fore.WHITE + f"ingrese la casilla inicial: "))
     posicion2= tablero[f"{posicion}"]
@@ -90,11 +93,15 @@ while True:
     #esta parte es para las reglas del peon
     posicion2= tablero[f"{posicion}"]
     destino= str(input(f"ingrese la pocision final: "))
-
+    posicion_D= tablero[f"destino"]
     while posicion2== "P":
+        
         contador_del_peonB= list(posicion)
         numero_del_peonB= int(contador_del_peonB[1]) + 2
         numero2_del_peonB= numero_del_peonB -1
+        if posicion_D == piezas:
+            print("El movimiento es invalido por obstruccion")
+            destino= str(input(f"ingrese la pocision final: "))
         if (posicion2 == "P" and numero2_del_peonB==3):
             if destino == f"{str(contador_del_peonB[0] + str(numero_del_peonB))}":
                 break
